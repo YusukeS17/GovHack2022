@@ -1,1 +1,8 @@
--
+- Liability
+  - "By using this website, you agree to its responsible usage and that you will only operate heavy vehicles when appropriately trained and licensed. Furthermore, you acknowledge that HoneyBadger merely accounts for the likelihood of disruptions upon roadways, and thus is not liable for accidents occuring within the planning, preparing or undertaking of your trips".
+- Fair Work/Safety
+  - Ensure the trip pplanning clearly accounts for trip times, speed limits, and proper rest breaks to mitigate risk of accidents (Will the website ever be used while the driver is on the road? If so then perhaps an automatic notification which alerts the driver when they are due for a break?) 
+- Road Laws
+  - Make sure the routes are all approved by the NVHR (which may be tricky since the NVHR data is copyrighted but perhaps we just make reference to how this data could be collated if the website moved beyond the prototype phase?)
+- Copyright
+  - Adhere to creative commons, make sure we include appropriate trademarks
