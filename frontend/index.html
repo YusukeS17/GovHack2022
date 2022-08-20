@@ -13,20 +13,18 @@
     <aside>
         <section class="input">
             <input type="text" id="origin" placeholder="Enter origin">
-            <input type="text" id="origin" placeholder="Enter destination">
+            <input type="text" id="destination" placeholder="Enter destination">
             <input type="datetime-local" id="time" placeholder="Select time">
-            <button>Calculate</button>
+            <button id="calculate">Calculate</button>
         </section>
         <section class="data">DATA</section>
     </aside>
-    <section class="map">
-
-        <div id="contentframe" style="position:relative; top: 0px; left: 600px;">
-            <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
-                src="https://www.openstreetmap.org/export/embed.html?bbox=-62.04673002474011%2C16.95487694424327%2C-61.60521696321666%2C17.196751341562923&amp;layer=mapnik" 
-                style="border: 1px solid black"></iframe></div>
-
-    </section>
+    <section class="map" id="map">
+        
    </main>
+   <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTmoNvj8PFoA6BBqVPsdG4mH_xahEJi9c&libraries=places&callback=initMap"></script>
+    <script src="main.js"></script>
+
 </body>
 </html>
