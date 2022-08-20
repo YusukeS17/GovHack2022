@@ -1,0 +1,74 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: flex-row;
+    min-height: 100vh;
+}
+
+aside {
+    border-right: 1px solid #ccc;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+section.map{
+    flex-grow: 1;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin-bottom: 4px;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+section.input {
+    padding: 6px 0;
+}
+section.data {
+    height: 100%;
+}
