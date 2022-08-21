@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honey Badger</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <header>
+        <h1>Honey Badger</h1>
+    </header>
+   <main>
+    <aside>
+        <section class="input">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="from" class="col-xs-2 control-label"><i class="far fa-dot-circle"></i></label>
+                    <div class="col-xs-4">
+                        <input type="text" id="from" placeholder="Origin" class="form-control">
+                    </div>
+               </div>
+               <div class="form-group">
+                    <label for="to" class="col-xs-2 control-label"><i class="fas fa-map-marker-alt"></i></label>
+                    <div class="col-xs-4">
+                        <input type="text" id="to" placeholder="Destination" class="form-control">
+                    </div>
+                 </div>
+            </form>
+            <div class="container-fluid">
+                <div class="col-xs-offset-2 col-xs-10">
+                    <button class="btn btn-info btn-lg" id="bt_calculate" onclick="calcRoute();"><i class="fas fa-map-signs"></i>Show Map</button>
+                </div>
+            </div>
+            <input type="datetime-local" id="time" placeholder="Select time">
+            <button id="bt_calculate" onclick="insertACell()">Calculate</button>
+        </section>
+        <section class="data">
+            
+            <form method="post">
+                <table class="table table-bordered table-striped" id="prediction">
+                    <thead>
+                        <tr>
+                            <th>Route</th>
+                            <th>Flood</th>
+                            <th>Bushfire</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </form>
+        </section>
+    </aside>
+    <section class="map">
+        <div class="jumbotron">
+
+            <div class="container-fluid">
+                <div id="googleMap">
+                </div>
+                <div id="output">
+                </div>
+            </div>
+        </div>
+    </section>
+   </main>
+
+<script>
+    document.getElementById("bt_calculate").addEventListener("click", displayDate);
+
+    function displayDate() {
+        document.getElementById("test").innerHTML = Date();
+    }
+
+    function insertACell() {
+        // Find a tabler element with id="prediction"
+        var table = document.getElementById("prediction");
+        // Create an empty tr element and add it to the 1st position of the table
+        var row = table.insertRow(1);
+        // Insert new cells at the 1st and 2nd position of the new tr element
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        // Add some text to the new cells
+        cell1.innerHTML = "A";
+        cell2.innerHTML = "70%";
+        cell3.innerHTML = "5%";
+    }
+</script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgRCTEb58FHAndh0btD-pRgjpgH3johAI&libraries=places"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script src="test.js"></script>
+
+</body>
+</html>
